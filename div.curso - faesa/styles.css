@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1rem 3rem;
+  background-color: #fff;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+.header-busca a{
+  text-decoration: none;
+  background-color: rgb(0, 155, 202);
+  font-size: 1rem;
+  color: aliceblue;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+.header-busca a:hover{
+  background-color: #045ea7;
+  color: #fff;
+}
+
+.content {
+  display: block;
+  position: relative;
+  padding: 50px;
+}
+
+.content h1{
+  text-align: center;
+  text-shadow: 3px 5px 3px black;
+  z-index: 2;
+  color: #fff;
+  font-size: 35px;
+}
+
+.tags-header{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tags-header i{
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 5px 10px 10px;
+  background: #fff;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 3px 5px 3px black;
+}
+
+body{
+  font-size: 1.2rem;
+  background-color: #cbecfc;
+}
+
+.content-box{
+  display: grid;
+  grid-template-areas: 
+  ". . . . ."
+  ". curso . form ."
+  ". curso . form ."
+  ". . . . ."
+  ;
+  gap: 5rem;
+  align-items: center;
+}
+
+main {
+  grid-area: form;
+}
+
+aside {
+  grid-area: curso;
+}
+
+aside {
+font-size: 1rem;
+height: 30rem;
+border-radius: 50px;
+background: #0c5c85;
+box-shadow:  -10px 10px 20px #35667e,
+             10px -10px 20px #94d8f9;
+
+display: grid;
+padding: 50px 20px;
+
+}
+
+aside p{
+  color: #e8e6e6;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgb(78, 77, 77);
+  margin-top: 0.5rem;
+}
+
+aside h2{
+  font-size: 32px;
+  font-weight: 500 bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #045ea7;
+  margin-top: -1.5rem;
+}
+
+aside p span {
+color: black;
+font-weight: bold;
+text-shadow: none;
+}
+
+ul li {
+  color: black;
+  margin-left: 2rem;
+  margin-top: 0.3rem;
+  font-weight: bold;
+}
+
+.content-form{
+  border-radius: 7px;
+  padding: 40px 40px;
+  background-color: #f8f8f8;
+  box-shadow: 3px 3px 5px;
+}
+
+.mensalidade {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.mensalidade p{
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #045ea7;
+}
+
+.valor-normal {
+  font-size: 60px;
+  position: relative;
+  display: block;
+  margin: 0;
+  line-height: 40px;
+  font-weight: 900;
+  text-decoration: line-through;
+}
+
+.valor{
+  font-size: 100px;
+  position: relative;
+  display: block;
+  margin: 0;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.valor-normal::before{
+  content: 'DE ';
+  font-size: 12px;
+}
+
+.valor::before{
+  content: 'POR ';
+  font-size: 14px;
+}
+
+main h3{
+  display: block;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.content-form-cad input {
+  border: 0;
+  border-bottom: 1px solid #333;
+  padding: 2px 10px 10px;
+  outline: 0;
+  transition: 0.1s linear all;
+}
+
+.content-form-cad input:hover{
+  border-bottom: 1px solid #26a69a;
+  color: #26a69a;
+}
+
+.content-form-cad button{
+  background: #045ea7;
+  color: #fff;
+  border: 1px solid #045ea7;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  max-width: 90%;
+  width: auto;
+  transition: .1s linear all;
+  -webkit-appearance: none;
+  display: block;
+  margin: 20px auto 0;
+  text-transform: inherit;
+}
+
+.content-form-cad button:hover{
+  background: #5baad1;
+  cursor: pointer;
+}
+
+.content-form-cad label {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+.content-form-cad{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 15px 15px;
+}
+
+.form-columns-1, .form-columns-2{
+  display: grid;
+  align-items: center;
+}
